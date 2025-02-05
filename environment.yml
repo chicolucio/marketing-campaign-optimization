@@ -1,59 +1,341 @@
-name: marketing_case
+name: ifood_case
 channels:
-  - defaults
   - conda-forge
-  - pytorch
-  # - fastai
+  - defaults
 dependencies:
-  - python>=3.6
-  - pip
-  # BASICS
-  - numpy
-  - scipy
-  - pandas
-  - tqdm
-  - click
-  - ipython
-  # VISUALIZATION
-  - matplotlib
-  - ipympl  # interactive matplotlib plots
-  - seaborn
-  # - altair
-  # - yellowbrick
-  # ML, STATS & DEEP LEARNING
-  # - statsmodels
-  # - scikit-learn
-  # - sktime
-  # - tslearn
-  # - xgboost
-  # - catboost
-  # - lightgbm
-  # - pytorch
-  # - fastai  # activate fastai channel above!
-  # - tensorflow
-  # - keras
-  # - spacy
-  # OTHER TOOLS
-  # - optuna
-  # - dask
-  # - snakeviz
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - _py-xgboost-mutex=2.0=gpu_0
+  - alabaster=1.0.0=pyhd8ed1ab_1
+  - alsa-lib=1.2.13=hb9d3cd8_0
+  - asttokens=2.0.5=pyhd3eb1b0_0
+  - aws-c-auth=0.8.1=h205f482_0
+  - aws-c-cal=0.8.1=h1a47875_3
+  - aws-c-common=0.10.6=hb9d3cd8_0
+  - aws-c-compression=0.3.0=h4e1184b_5
+  - aws-c-event-stream=0.5.0=h7959bf6_11
+  - aws-c-http=0.9.2=hefd7a92_4
+  - aws-c-io=0.15.3=h173a860_6
+  - aws-c-mqtt=0.11.0=h11f4f37_12
+  - aws-c-s3=0.7.9=he1b24dc_1
+  - aws-c-sdkutils=0.2.2=h4e1184b_0
+  - aws-checksums=0.2.2=h4e1184b_4
+  - aws-crt-cpp=0.29.9=he0e7f3f_2
+  - aws-sdk-cpp=1.11.489=h4d475cb_0
+  - azure-core-cpp=1.14.0=h5cfcd09_0
+  - azure-identity-cpp=1.10.0=h113e628_0
+  - azure-storage-blobs-cpp=12.13.0=h3cf044e_1
+  - azure-storage-common-cpp=12.8.0=h736e048_1
+  - azure-storage-files-datalake-cpp=12.12.0=ha633028_1
+  - babel=2.16.0=pyhd8ed1ab_1
+  - brotli=1.1.0=hb9d3cd8_2
+  - brotli-bin=1.1.0=hb9d3cd8_2
+  - brotli-python=1.1.0=py313h46c70d0_2
+  - bzip2=1.0.8=h5eee18b_6
+  - c-ares=1.34.4=hb9d3cd8_0
+  - ca-certificates=2024.12.31=h06a4308_0
+  - cairo=1.18.2=h3394656_1
+  - certifi=2024.12.14=pyhd8ed1ab_0
+  - cffi=1.17.1=py313hfab6e84_0
+  - cfgv=3.4.0=py313h06a4308_0
+  - charset-normalizer=3.4.1=pyhd8ed1ab_0
+  - colorama=0.4.6=pyhd8ed1ab_1
+  - comm=0.2.1=py313h06a4308_0
+  - configupdater=3.2=pyhd8ed1ab_1
+  - contourpy=1.3.1=py313h33d0bda_0
+  - cramjam=2.8.4rc3=py313h330e790_2
+  - cuda-version=11.8=h70ddcb2_3
+  - cudatoolkit=11.8.0=h4ba93d1_13
+  - cycler=0.12.1=pyhd8ed1ab_1
+  - cyrus-sasl=2.1.27=h54b06d7_7
+  - dbus=1.13.6=h5008d03_3
+  - debugpy=1.8.11=py313h6a678d5_0
+  - decorator=5.1.1=pyhd3eb1b0_0
+  - docutils=0.21.2=pyhd8ed1ab_1
+  - double-conversion=3.3.0=h59595ed_0
+  - executing=0.8.3=pyhd3eb1b0_0
+  - expat=2.6.4=h6a678d5_0
+  - fastparquet=2024.11.0=py313ha014f3b_0
+  - font-ttf-dejavu-sans-mono=2.37=hab24e00_0
+  - font-ttf-inconsolata=3.000=h77eed37_0
+  - font-ttf-source-code-pro=2.038=h77eed37_0
+  - font-ttf-ubuntu=0.83=h77eed37_3
+  - fontconfig=2.15.0=h7e30c49_1
+  - fonts-conda-ecosystem=1=0
+  - fonts-conda-forge=1=0
+  - fonttools=4.55.4=py313h8060acc_0
+  - freetype=2.12.1=h267a509_2
+  - fsspec=2024.6.1=py313h06a4308_0
+  - gflags=2.2.2=h6a678d5_1
+  - glog=0.7.1=hbabe93e_0
+  - graphite2=1.3.13=h59595ed_1003
+  - h2=4.1.0=pyhd8ed1ab_1
+  - harfbuzz=10.2.0=h4bba637_0
+  - hpack=4.0.0=pyhd8ed1ab_1
+  - hyperframe=6.0.1=pyhd8ed1ab_1
+  - icu=75.1=he02047a_0
+  - identify=2.5.5=py313h06a4308_0
+  - idna=3.10=pyhd8ed1ab_1
+  - imagesize=1.4.1=pyhd8ed1ab_0
+  - imbalanced-learn=0.13.0=pyhd8ed1ab_0
+  - ipykernel=6.29.5=pyh3099207_0
+  - ipython=8.30.0=py313h06a4308_0
+  - jedi=0.19.2=py313h06a4308_0
+  - jinja2=3.1.5=pyhd8ed1ab_0
+  - joblib=1.4.2=pyhd8ed1ab_1
+  - jupyter_client=8.6.0=py313h06a4308_0
+  - jupyter_core=5.7.2=py313h06a4308_0
+  - kernel-headers_linux-64=3.10.0=he073ed8_18
+  - keyutils=1.6.1=h166bdaf_0
+  - kiwisolver=1.4.7=py313h33d0bda_0
+  - krb5=1.21.3=h659f571_0
+  - lcms2=2.16=hb7c19ff_0
+  - ld_impl_linux-64=2.40=h12ee557_0
+  - lerc=4.0.0=h27087fc_0
+  - libabseil=20240722.0=cxx17_hbbce691_4
+  - libarrow=19.0.0=h00a82cf_8_cpu
+  - libarrow-acero=19.0.0=hcb10f89_8_cpu
+  - libarrow-dataset=19.0.0=hcb10f89_8_cpu
+  - libarrow-substrait=19.0.0=h08228c5_8_cpu
+  - libblas=3.9.0=26_linux64_openblas
+  - libbrotlicommon=1.1.0=hb9d3cd8_2
+  - libbrotlidec=1.1.0=hb9d3cd8_2
+  - libbrotlienc=1.1.0=hb9d3cd8_2
+  - libcblas=3.9.0=26_linux64_openblas
+  - libclang-cpp19.1=19.1.7=default_hb5137d0_0
+  - libclang13=19.1.7=default_h9c6a7e4_0
+  - libcrc32c=1.1.2=h6a678d5_0
+  - libcups=2.3.3=h4637d8d_4
+  - libcurl=8.11.1=h332b0f4_0
+  - libdeflate=1.23=h4ddbbb0_0
+  - libdrm=2.4.124=hb9d3cd8_0
+  - libedit=3.1.20240808=pl5321h7949ede_0
+  - libegl=1.7.0=ha4b6fd6_2
+  - libev=4.33=h7f8727e_1
+  - libevent=2.1.12=hdbd6064_1
+  - libexpat=2.6.4=h5888daf_0
+  - libffi=3.4.4=h6a678d5_1
+  - libgcc=14.2.0=h77fa898_1
+  - libgcc-ng=14.2.0=h69a702a_1
+  - libgfortran=14.2.0=h69a702a_1
+  - libgfortran5=14.2.0=hd5240d6_1
+  - libgl=1.7.0=ha4b6fd6_2
+  - libglib=2.82.2=h2ff4ddf_1
+  - libglvnd=1.7.0=ha4b6fd6_2
+  - libglx=1.7.0=ha4b6fd6_2
+  - libgomp=14.2.0=h77fa898_1
+  - libgoogle-cloud=2.34.0=h2b5623c_0
+  - libgoogle-cloud-storage=2.34.0=h0121fbd_0
+  - libgrpc=1.67.1=h25350d4_1
+  - libiconv=1.17=hd590300_2
+  - libjpeg-turbo=3.0.0=hd590300_1
+  - liblapack=3.9.0=26_linux64_openblas
+  - liblightgbm=4.5.0=cuda_h1f3617d_4
+  - libllvm19=19.1.7=ha7bfdaf_0
+  - liblzma=5.6.3=hb9d3cd8_1
+  - libmpdec=4.0.0=h5eee18b_0
+  - libnghttp2=1.64.0=h161d5f1_0
+  - libntlm=1.8=hb9d3cd8_0
+  - libopenblas=0.3.28=pthreads_h94d23a6_1
+  - libopengl=1.7.0=ha4b6fd6_2
+  - libopentelemetry-cpp=1.18.0=hfcad708_1
+  - libopentelemetry-cpp-headers=1.18.0=ha770c72_1
+  - libparquet=19.0.0=h081d1f1_8_cpu
+  - libpciaccess=0.18=hd590300_0
+  - libpng=1.6.45=h943b412_0
+  - libpq=17.2=h3b95a9b_1
+  - libprotobuf=5.28.3=h6128344_1
+  - libre2-11=2024.07.02=hbbce691_2
+  - libsodium=1.0.18=h7b6447c_0
+  - libsqlite=3.48.0=hee588c1_1
+  - libssh2=1.11.1=hf672d98_0
+  - libstdcxx=14.2.0=hc0a3c3a_1
+  - libstdcxx-ng=14.2.0=h4852527_1
+  - libthrift=0.21.0=h0e7cc3e_0
+  - libtiff=4.7.0=hd9ff511_3
+  - libutf8proc=2.10.0=h4c51ac1_0
+  - libuuid=2.38.1=h0b41bf4_0
+  - libwebp-base=1.5.0=h851e524_0
+  - libxcb=1.17.0=h8a09558_0
+  - libxgboost=2.1.3=cuda118_h09a87be_2
+  - libxkbcommon=1.7.0=h2c5496b_1
+  - libxml2=2.13.5=h8d12d68_1
+  - libxslt=1.1.39=h76b75d6_0
+  - libzlib=1.3.1=hb9d3cd8_2
+  - lightgbm=4.5.0=cuda_py_4
+  - lz4-c=1.10.0=h5888daf_1
+  - markdown-it-py=3.0.0=pyhd8ed1ab_1
+  - markupsafe=3.0.2=py313h8060acc_1
+  - matplotlib=3.10.0=py313h78bf25f_0
+  - matplotlib-base=3.10.0=py313h129903b_0
+  - matplotlib-inline=0.1.6=py313h06a4308_0
+  - mdit-py-plugins=0.4.2=pyhd8ed1ab_1
+  - mdurl=0.1.2=pyhd8ed1ab_1
+  - munkres=1.1.4=pyh9f0ad1d_0
+  - mysql-common=9.0.1=h266115a_4
+  - mysql-libs=9.0.1=he0572af_4
+  - myst-parser=4.0.0=pyhd8ed1ab_1
+  - nccl=2.24.3.1=h03a54cd_0
+  - ncurses=6.5=h2d0b736_2
+  - nest-asyncio=1.6.0=py313h06a4308_0
+  - nlohmann_json=3.11.2=h6a678d5_0
+  - nodeenv=1.9.1=pyhd8ed1ab_1
+  - numpy=2.2.2=py313h17eae1a_0
+  - openjpeg=2.5.3=h5fbd93e_0
+  - openldap=2.6.9=he970967_0
+  - openssl=3.4.0=h7b32b05_1
+  - orc=2.0.3=h12ee42a_2
+  - packaging=24.2=pyhd8ed1ab_2
+  - pandas=2.2.3=py313ha87cce1_1
+  - parso=0.8.4=py313h06a4308_0
+  - patsy=1.0.1=pyhd8ed1ab_1
+  - pcre2=10.44=hba22ea6_2
+  - pexpect=4.8.0=pyhd3eb1b0_3
+  - pillow=11.1.0=py313h8db990d_0
+  - pip=24.2=py313h06a4308_0
+  - pixman=0.44.2=h29eaf8c_0
+  - platformdirs=4.3.6=pyhd8ed1ab_1
+  - pre-commit=4.1.0=pyha770c72_0
+  - prometheus-cpp=1.3.0=ha5d0236_0
+  - prompt-toolkit=3.0.43=py313h06a4308_0
+  - prompt_toolkit=3.0.43=hd3eb1b0_0
+  - psutil=5.9.0=py313h5eee18b_1
+  - pthread-stubs=0.4=hb9d3cd8_1002
+  - ptyprocess=0.7.0=pyhd3eb1b0_2
+  - pure_eval=0.2.2=pyhd3eb1b0_0
+  - py-xgboost=2.1.3=cuda118_pyh1b5bf1a_2
+  - py-xgboost-gpu=2.1.3=pyh7984362_2
+  - pycparser=2.22=pyh29332c3_1
+  - pygments=2.19.1=pyhd8ed1ab_0
+  - pyparsing=3.2.1=pyhd8ed1ab_0
+  - pyscaffold=4.6=pyhd8ed1ab_1
+  - pyscaffoldext-dsproject=0.7.2=pyhd8ed1ab_1
+  - pyscaffoldext-markdown=0.5=pyhd8ed1ab_1
+  - pyside6=6.8.1=py313h5f61773_0
+  - pysocks=1.7.1=pyha55dd90_7
+  - python=3.13.1=ha99a958_105_cp313
+  - python-dateutil=2.9.0.post0=pyhff2d567_1
+  - python-tzdata=2025.1=pyhd8ed1ab_0
+  - python_abi=3.13=0_cp313
+  - pytz=2024.1=pyhd8ed1ab_0
+  - pyyaml=6.0.2=py313h8060acc_2
+  - pyzmq=26.2.0=py313h6a678d5_0
+  - qhull=2020.2=h434a139_5
+  - qt6-main=6.8.1=h588cce1_2
+  - re2=2024.07.02=h9925aae_2
+  - readline=8.2=h5eee18b_0
+  - requests=2.32.3=pyhd8ed1ab_1
+  - s2n=1.5.11=h072c03f_0
+  - scikit-learn=1.6.1=py313h8ef605b_0
+  - scipy=1.15.1=py313h750cbce_0
+  - seaborn=0.13.2=hd8ed1ab_3
+  - seaborn-base=0.13.2=pyhd8ed1ab_3
+  - setuptools=75.1.0=py313h06a4308_0
+  - setuptools-scm=8.1.0=pyhd8ed1ab_1
+  - six=1.17.0=pyhd8ed1ab_0
+  - sklearn-compat=0.1.3=pyhd8ed1ab_0
+  - snappy=1.2.1=h6a678d5_0
+  - snowballstemmer=2.2.0=pyhd8ed1ab_0
+  - sphinx=8.1.3=pyhd8ed1ab_1
+  - sphinxcontrib-applehelp=2.0.0=pyhd8ed1ab_1
+  - sphinxcontrib-devhelp=2.0.0=pyhd8ed1ab_1
+  - sphinxcontrib-htmlhelp=2.1.0=pyhd8ed1ab_1
+  - sphinxcontrib-jsmath=1.0.1=pyhd8ed1ab_1
+  - sphinxcontrib-qthelp=2.0.0=pyhd8ed1ab_1
+  - sphinxcontrib-serializinghtml=1.1.10=pyhd8ed1ab_1
+  - sqlite=3.48.0=h9eae976_1
+  - stack_data=0.2.0=pyhd3eb1b0_0
+  - statsmodels=0.14.4=py313ha014f3b_0
+  - sysroot_linux-64=2.17=h0157908_18
+  - threadpoolctl=3.5.0=pyhc1e730c_0
+  - tk=8.6.13=noxft_h4845f30_101
+  - tomli=2.2.1=pyhd8ed1ab_1
+  - tomlkit=0.13.2=pyha770c72_1
+  - tornado=6.4.2=py313h536fd9c_0
+  - traitlets=5.14.3=py313h06a4308_0
+  - typing-extensions=4.12.2=hd8ed1ab_1
+  - typing_extensions=4.12.2=pyha770c72_1
+  - tzdata=2025a=h04d1e81_0
+  - ukkonen=1.0.1=py313hdb19cb5_1
+  - urllib3=2.3.0=pyhd8ed1ab_0
+  - wayland=1.23.1=h3e06ad9_0
+  - wcwidth=0.2.5=pyhd3eb1b0_0
+  - wheel=0.44.0=py313h06a4308_0
+  - xcb-util=0.4.1=hb711507_2
+  - xcb-util-cursor=0.1.5=hb9d3cd8_0
+  - xcb-util-image=0.4.0=hb711507_2
+  - xcb-util-keysyms=0.4.1=hb711507_0
+  - xcb-util-renderutil=0.3.10=hb711507_0
+  - xcb-util-wm=0.4.2=hb711507_0
+  - xkeyboard-config=2.43=hb9d3cd8_0
+  - xorg-libice=1.1.2=hb9d3cd8_0
+  - xorg-libsm=1.2.5=he73a12e_0
+  - xorg-libx11=1.8.10=h4f16b4b_1
+  - xorg-libxau=1.0.12=hb9d3cd8_0
+  - xorg-libxcomposite=0.4.6=hb9d3cd8_2
+  - xorg-libxcursor=1.2.3=hb9d3cd8_0
+  - xorg-libxdamage=1.1.6=hb9d3cd8_0
+  - xorg-libxdmcp=1.1.5=hb9d3cd8_0
+  - xorg-libxext=1.3.6=hb9d3cd8_0
+  - xorg-libxfixes=6.0.1=hb9d3cd8_0
+  - xorg-libxi=1.8.2=hb9d3cd8_0
+  - xorg-libxrandr=1.5.4=hb9d3cd8_0
+  - xorg-libxrender=0.9.12=hb9d3cd8_0
+  - xorg-libxtst=1.2.5=hb9d3cd8_3
+  - xorg-libxxf86vm=1.1.6=hb9d3cd8_0
+  - xz=5.4.6=h5eee18b_1
+  - yaml=0.2.5=h7f98852_2
+  - zeromq=4.3.5=h6a678d5_0
+  - zipp=3.21.0=pyhd8ed1ab_1
+  - zlib=1.3.1=hb9d3cd8_2
+  - zstandard=0.23.0=py313h80202fe_1
+  - zstd=1.5.6=ha6fb4c9_0
   - pip:
-     - -e .  # install git checkout of marketing_case in editable mode
-     # add here only pip-packages that are not available in conda/conda-forge! E.g.:
-     # - icecream
-     # - jax
-     # - numpyro
-     # - funsor
-     # - neptune-client
-     # - neptune-contrib
-
-  # DEVELOPMENT ONLY PACKAGES (could also be kept in a separate environment file)
-  - jupyterlab
-  - pytest
-  - pytest-cov
-  - tox
-  - pre_commit
-  - nbdime
-  - nbstripout
-  - sphinx
-  - recommonmark
+      - alembic==1.14.1
+      - annotated-types==0.7.0
+      - blinker==1.9.0
+      - cachetools==5.5.1
+      - chardet==5.2.0
+      - click==8.1.8
+      - cloudpickle==3.1.1
+      - databricks-sdk==0.42.0
+      - deprecated==1.2.18
+      - distlib==0.3.9
+      - docker==7.1.0
+      - filelock==3.17.0
+      - flask==3.1.0
+      - gitdb==4.0.12
+      - gitpython==3.1.44
+      - google-auth==2.38.0
+      - graphene==3.4.3
+      - graphql-core==3.2.6
+      - graphql-relay==3.2.0
+      - greenlet==3.1.1
+      - gunicorn==23.0.0
+      - importlib-metadata==8.5.0
+      - itsdangerous==2.2.0
+      - mako==1.3.8
+      - markdown==3.7
+      - mlflow==2.20.1
+      - mlflow-skinny==2.20.1
+      - opentelemetry-api==1.29.0
+      - opentelemetry-sdk==1.29.0
+      - opentelemetry-semantic-conventions==0.50b0
+      - pluggy==1.5.0
+      - protobuf==5.29.3
+      - pyarrow==18.1.0
+      - pyasn1==0.6.1
+      - pyasn1-modules==0.4.1
+      - pydantic==2.10.6
+      - pydantic-core==2.27.2
+      - pyproject-api==1.9.0
+      - python-dotenv==1.0.1
+      - rsa==4.9
+      - smmap==5.0.2
+      - sqlalchemy==2.0.37
+      - sqlparse==0.5.3
+      - tox==4.24.1
+      - virtualenv==20.29.1
+      - werkzeug==3.1.3
+      - wrapt==1.17.2
+prefix: /opt/anaconda/envs/ifood_case
