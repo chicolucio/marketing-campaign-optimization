@@ -1,4 +1,20 @@
+import os
 import sys
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+from dotenv import load_dotenv
+
+CURRENT_FOLDER = Path(__file__).resolve()
+STYLE_FILE = CURRENT_FOLDER.parent / "flsbustamante.mplstyle"
+ENV_FILE = CURRENT_FOLDER.parent / ".env"
+
+plt.style.use(STYLE_FILE)
+
+load_dotenv(ENV_FILE)
+
+MLFLOW_ON = os.getenv("MLFLOW_ON") == "True"
+
 
 if sys.version_info[:2] >= (3, 8):
     # TODO: Import directly (no need for conditional) when `python_requires = >= 3.8`
