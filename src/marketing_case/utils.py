@@ -96,23 +96,6 @@ class StatisticalAnalysisBinary:
         The binary target variable used for grouping.
     classes : tuple
         The class labels representing the two groups.
-    groupby : tuple[pd.DataFrame, pd.DataFrame]
-        The dataset split into two groups based on the target variable.
-
-    Methods
-    -------
-    shape_analysis(columns)
-        Computes skewness and kurtosis for numerical columns.
-    shapiro_wilk(columns, alpha=0.05)
-        Performs the Shapiro-Wilk test for normality.
-    levene(columns, alpha=0.05, center="median")
-        Performs Levene's test to assess homogeneity of variances.
-    mann_whitney(columns, alpha=0.05, alternative="two-sided")
-        Performs the Mann-Whitney U test for comparing independent samples.
-    t_test(columns, alpha=0.05, equal_var=False, alternative="two-sided")
-        Performs the independent t-test (Welch's t-test by default).
-    chi_squared(columns, alpha=0.05)
-        Performs the chi-squared test of independence for categorical variables.
     """
 
     def __init__(
